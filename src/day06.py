@@ -5,9 +5,8 @@ from collections import Counter
 MODULE_DIR = os.path.dirname(os.path.realpath(__file__))
 PROJECT_DIR = os.path.join(MODULE_DIR, "..")
 INPUT_SOURCE_DIR = os.path.join(PROJECT_DIR, "input")
+NEWBORN_FISH_DAYS = 8
 
-
-# class Coordinate:
 # 6,5,4,3,2,1,0 -> 6 + new 8
 
 def process_fish(day: int):
@@ -28,8 +27,8 @@ def get_data_lines(input_file_name):
 def do_the_thing(input_file_name, num_days):
     data_lines = get_data_lines(input_file_name)
 
-    # fish_counters = list(map(int, data_lines[0].split(",")))
-    fish_counters = [3, 4, 3, 1, 2]
+    fish_counters = list(map(int, data_lines[0].split(",")))
+    # fish_counters = [3, 4, 3, 1, 2]
     # print(f"Initial state: {fish_counters}")
 
     for i in range(num_days):
@@ -47,8 +46,6 @@ def day_6_do(input_file_name):
 
 
 def do_the_thing_2(input_file_name, num_days):
-    NEWBORN_FISH_DAYS = 8
-
     data_lines = get_data_lines(input_file_name)
 
     initial_fish_counters = list(map(int, data_lines[0].split(",")))
