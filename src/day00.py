@@ -18,14 +18,20 @@ def do_the_thing(input_file_name: str):
     data_lines = get_data_lines(input_file_name)
     print(f"Number of data lines: {len(data_lines)}")
 
-    print(f"place-output-here-1\n#################################\n")
+    for data_line in data_lines:
+        print(f"data line: {data_line}")
+
+    print(f"\n#################################\n")
 
 
 def do_the_thing_2(input_file_name: str):
     data_lines = get_data_lines(input_file_name)
     print(f"Number of data lines: {len(data_lines)}")
 
-    print(f"place-output-here-2")
+    for data_line in data_lines:
+        print(f"data line: {data_line}")
+
+    print(f"\n#################################\n")
 
 
 def day_0_do(input_file_name: str):
